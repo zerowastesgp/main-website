@@ -1,16 +1,79 @@
-# The URL the site will be built for
+# The base URL of the site.
 base_url = "https://www.zerowastesgp.fr"
 
-# Whether to automatically compile all Sass files in the sass directory
+# The site title and description; used in feeds by default.
+title = "Zero Waste Sud Grand Paris"
+description = "Groupe local de Zero Waste France opérant sur le bassin sud-ouest du grand Paris (Malakoff, Vanves, Issy-Les-Moulineaux, Montrouge, Chatillon, Clamart)."
+
+# The default language; used in feeds.
+default_language = "fr"
+
+# When set to "true", the Sass files in the `sass` directory in the site root
+# are compiled.
 compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
+# The taxonomies to be rendered for the site and their configuration of the
+# default languages.
+taxonomies = []
+
+# When set to "true", a search index is built from the pages and section content
+# for `default_language`.
 build_search_index = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+# When set to "true", all code blocks are highlighted.
 highlight_code = false
 
+# When set to "true", emoji aliases translated to their corresponding Unicode
+# emoji equivalent in the rendered Markdown files (e.g.: :smile: => 😄).
+render_emoji = true
+
+# Whether external links are to be opened in a new tab. If this is true, a
+# `rel="noopener"` will always automatically be added for security reasons.
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links.
+external_links_no_follow = true
+
+# Whether to set rel="noreferrer" for all external links.
+external_links_no_referrer = true
+
+# Whether smart punctuation is enabled (changing quotes, dashes, dots in their
+# typographic form). For example, `...` into `…`, `"quote"` into `“curly”`, etc.
+smart_punctuation = true
+
 [extra]
-# Put all your custom variables here
+address = [
+  "Zero Waste Sud Grand Paris",
+  "Maison de la vie associative",
+  "26 rue Victor Hugo",
+  "92240 Malakoff",
+]
+
+copyright = "Zero Waste Sud Grand Paris"
+
+nav = [
+  { url = "/chantiers", name = "Chantiers en cours" },
+  { url = "/actualite", name = "Actualité" },
+  { url = "https://www.helloasso.com/associations/zero-waste-sud-grand-paris/adhesions/zero-waste-sgp-cotisations-2020", name = "Nous rejoindre" },
+  { url = "https://www.helloasso.com/associations/zero-waste-sud-grand-paris/formulaires/1", name = "Nous soutenir" },
+]
+
+social = [
+  { url = "https://www.facebook.com/ZeroWasteSudGrandParis", title = "facebook" },
+  { url = "https://www.instagram.com/zerowaste_sudgrandparis", title = "instagram" },
+  { url = "https://github.com/zerowastesgp", title = "github" },
+  { url = "mailto:sudgrandparis@zerowastefrance.org", title = "envelope-o" },
+]
+
+volunteers = [
+  { name = "Alix", role = "Présidente", picture = "alix.jpg" },
+  { name = "Marie", role = "Vice-présidente", picture = "marie.jpg" },
+  { name = "Thomas", role = "Trésorier", picture = "thomas.jpg" },
+  { name = "Rémi", role = "Secrétaire général", picture = "" },
+  { name = "Paul", role = "Informatique", picture = "paul.jpg" },
+  { name = "Eloïse", role = "Communication & Design", picture = "eloise.jpg" },
+]

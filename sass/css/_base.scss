@@ -1,0 +1,99 @@
+/*!
+ * Adapted from Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see https://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: $text-size;
+
+  &.small {
+    font-size: $text-small-size;
+  }
+}
+
+ul {
+  font-size: $text-size;
+
+  &.small {
+    font-size: $text-small-size;
+  }
+}
+
+a {
+  outline: 0;
+  color: $primary-colour;
+
+  &:hover, &:focus, &:active, &.active {
+    outline: 0;
+    color: $primary-colour;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: $headers-fonts;
+  font-weight: $headers-font-weight;
+}
+
+hr {
+  &.separator-light, &.separator-dark {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    overflow: visible;
+  }
+
+  &.separator-light {
+    border-color: #fff;
+
+    &:after {
+      color: #fff;
+      background-color: $primary-colour;
+    }
+  }
+
+  &.separator-dark {
+    border-color: $secondary-colour;
+
+    &:after {
+      color: $secondary-colour;
+      background-color: #fff;
+    }
+  }
+}
+
+section {
+  padding: 100px 0;
+
+  h2 {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  &.success {
+    color: #fff;
+    background: $primary-colour;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 75px 0;
+
+    &.first {
+      padding-top: 75px;
+    }
+  }
+}
+
+.img-centered {
+  margin: 0 auto;
+}

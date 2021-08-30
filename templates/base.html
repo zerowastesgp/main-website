@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ config.description }}">
+    <link rel="shortcut icon" href="{{ get_url(path="img/favicon.ico") }}">
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous">
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet" type="text/css">
+    {% endblock head %}
+  </head>
+  <body id="page-top" class="index">
+    {% block nav %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+      <a class="navbar-brand" href="/#page-top">
+        <img src="{{ get_url(path="img/main-logo.png") }}" width="30px" height="30px"
+          class="d-inline-block align-top" alt="Logo de Zero Waste Sud Grand
+          Paris" loading="lazy">
+        {{ config.title }}
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#main-menu" aria-controls="main-menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          {% for item in config.extra.nav %}
+          <li class="nav-item page-scroll">
+            <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+    {% endblock nav %}
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block footer %}
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="col footer-col">
+              <h3>Adresse</h3>
+              <p>
+              {% for adress_line in config.extra.address %}
+              {{ adress_line }} <br>
+              {% endfor %}
+              </p>
+            </div>
+            <div class="col footer-col">
+              <h3>Nos liens sociaux</h3>
+              <div class="row">
+                {% for network in config.extra.social %}
+                <div class="col">
+                  <p><a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a></p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col footer-col">
+              <div class="row">
+                <div class="col">
+                  <iframe id="haWidget" allowtransparency="true"
+                    src="https://www.helloasso.com/associations/zero-waste-sud-grand-paris/adhesions/zero-waste-sgp-cotisations-2020/widget-bouton"
+                    style="width:100%;height:70px;border:none;"></iframe>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <iframe id="haWidget" allowtransparency="true"
+                    src="https://www.helloasso.com/associations/zero-waste-sud-grand-paris/formulaires/1/widget-bouton"
+                    style="width:100%;height:70px;border:none;"></iframe>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center">
+                  <p>Propulsé par <a href="https://www.helloasso.com"
+                    rel="nofollow">HelloAsso</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              Copyright &copy; {{ config.extra.copyright }} {{ now() | date(format="%Y") }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll d-block d-md-none">
+      <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    {% endblock footer %}
+
+    {% block js %}
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+
+    <!-- Plugins JavaScript -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ get_url(path="js/freelancer.js") }}"></script>
+    {% endblock js %}
+  </body>
+</html>

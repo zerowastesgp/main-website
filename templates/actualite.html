@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="articles">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2>{{ section.title }}</h2>
+      </div>
+    </div>
+    <hr class="separator-dark">
+    <div class="row">
+    {% for post in section.pages %}
+      <article class="col">
+        <div class="post-meta">
+          <div class="post-thumbnail">
+            <a href="{{ post.permalink }}">
+              <img src="{{ get_url(path=post.path ~ post.extra.thumbnail) }}" alt="{{ post.title }}">
+            </a>
+          </div>
+          <h4 class="mt-2">{{ post.title }}</h4>
+        </div>
+        {% if post.summary %}
+        <div class="post-content">
+          {{ post.summary | safe }}
+        </div>
+        <a href="{{ post.permalink }}">Lire la suite</a>
+        {% else %}
+        <div class="post-content">
+          {{ post.content | safe }}
+        </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}
