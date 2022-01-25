@@ -1,0 +1,82 @@
++++
+title = "Chantiers en cours"
+weight = 1
+path = "/chantiers"
++++
+<div id="chantiers">
+  <div class="row">
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/conferences.jpg" alt="Conférences initiation au Zéro Déchet">
+        </div>
+        <h3 class="mt-2">Conférences initiation au zéro déchet</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Nous effectuons des conférences découvertes, permettant aux citoyens de saisir les enjeux de la réduction de nos déchets et d'obtenir des clés pour se lancer dans un mode de vie zéro déchet.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/ateliers.jpg" alt="Ateliers de sensibilisation pour enfants">
+        </div>
+        <h3 class="mt-2">Ateliers de sensibilisation pour enfants</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Nous proposons des ateliers visant à sensibiliser les plus jeunes sur la problématique des déchets. Nos ateliers ont été préparés en collaboration avec une éducatrice et une maitresse d'école afin de valoriser le temps de concentration des enfants grâce à des jeux et quiz.</p>
+      </div>
+    </article>
+  </div>
+  <div class="row">
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/diy.jpg" alt="Ateliers DIY (Do It Yourself)">
+        </div>
+        <h3 class="mt-2">Ateliers DIY (Do It Yourself)</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Nous animons des ateliers DIY visant la fabrication de ses propres produits ménagers, de Bee-Wraps ou encore de sacs à vrac.</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/commercants.jpg" alt="Cartographie des commerçants Zéro Déchet">
+        </div>
+        <h3 class="mt-2">Cartographie des commerçants Zéro Déchet</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Vous pouvez consulter une carte interactive répertoriant les commerçants près de chez vous qui proposent de la vente en vrac ou acceptant les contenants propres des particuliers.</p>
+        <p>Vous connaissez un commerçant qui n'est pas répertorié ? Contribuez à la carte en nous envoyant ses coordonnées !</p>
+        <p>Vous êtes commerçant et souhaiteriez recevoir une vignette à afficher à l'entrée de votre magasin ? Contactez-nous !</p>
+      </div>
+    </article>
+  </div>
+  <div class="row">
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/evenementiel.jpg" alt="Évènementiel Zéro Déchet">
+        </div>
+        <h3 class="mt-2">Évènementiel Zéro Déchet</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Nous pouvons accompagner des organisateurs d'évènements à forte affluence afin de minimiser la quantité de déchets produits lors de ses rassemblements (fêtes municipales, réunions d'information, festivals, ateliers, concerts, etc.).</p>
+      </div>
+    </article>
+    <article class="col">
+      <div class="chantier-meta">
+        <div class="chantier-thumbnail">
+          <img src="/chantiers/vaisselle.jpg" alt="Kit Vaisselle">
+        </div>
+        <h3 class="mt-2">Kit Vaisselle</h3>
+      </div>
+      <div class="chantier-content">
+        <p>Nous pouvons mettre à disposition des particuliers un lot de vaisselle réutilisable (assiettes, verres et couverts) pour vos évènements privés. Plutôt que d'acheter du jetable, contactez-nous pour louer notre Kit Vaisselle !</p>
+        <p>Vous avez de la vaisselle à donner ? N'hésitez pas, nous la récupérons !</p>
+      </div>
+    </article>
+  </div>
+</div>
