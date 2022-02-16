@@ -1,7 +1,6 @@
 +++
 title = "Chantiers en cours"
 weight = 1
-path = "/chantiers"
 +++
 <div id="chantiers">
   <div class="row">
