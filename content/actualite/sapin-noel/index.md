@@ -2,6 +2,10 @@
 title = "Quel sapin pour vote réveillon ?"
 date = 2019-12-03
 
+aliases = [
+  "/2019/12/03/sapin-de-noel",
+]
+
 [extra]
 thumbnail = "sapin-de-noel.png"
 +++

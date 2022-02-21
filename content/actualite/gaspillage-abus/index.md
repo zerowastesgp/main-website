@@ -2,6 +2,10 @@
 title = "Le gaspillage alimentaire à l'approche des fêtes"
 date = 2019-10-15
 
+aliases = [
+  "/2019/10/15/gaspillage-alimentaire",
+]
+
 [extra]
 thumbnail = "gaspillage_alimentaire.jpg"
 +++
