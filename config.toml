@@ -45,6 +45,10 @@ external_links_no_referrer = true
 # typographic form). For example, `...` into `…`, `"quote"` into `“curly”`, etc.
 smart_punctuation = true
 
+[translations]
+next_page = "Page suivante"
+previous_page = "Page précédente"
+
 [extra]
 address = [
   "Zero Waste Sud Grand Paris",

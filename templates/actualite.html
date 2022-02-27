@@ -10,7 +10,8 @@
     </div>
     <hr class="separator-dark">
     <div class="row">
-    {% for post in section.pages %}
+    {% for post in paginator.pages %}
+    {% set row_index = loop.index % section.extra.items_per_row %}
       <article class="col">
         <div class="post-meta">
           <div class="post-thumbnail">
@@ -31,8 +32,38 @@
         </div>
         {% endif %}
       </article>
+    {% if row_index == 0 %}
+    </div>
+    <div class="row">
+    {% endif %}
     {% endfor %}
     </div>
   </div>
 </section>
+
+<nav class="pagination">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {% if paginator.previous %}
+        <span class="pagination-item older">
+          <a href="{{ paginator.previous }}">← {{ trans(key="previous_page") }}</a>
+        </span>
+        {% else %}
+        <span class="pagination-item older">← {{ trans(key="previous_page") }}</span>
+        {% endif %}
+      </div>
+
+      <div class="col">
+        {% if paginator.next %}
+        <span class="pagination-item newer">
+          <a href="{{ paginator.next }}">{{ trans(key="next_page") }} →</a>
+        </span>
+        {% else %}
+        <span class="pagination-item newer">{{ trans(key="next_page") }} →</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</nav>
 {% endblock content %}
