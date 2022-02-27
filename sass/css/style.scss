@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// Global variables
+
+$text-size:                     1.2rem;
+$text-small-size:               1rem;
+
+$primary-colour:                #18bc9c;
+$secondary-colour:              #2c3e50;
+$secondary-colour-dark:         #233140;
+
+$navbar-fonts:                  Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$navbar-font-weight:            700;
+
+$headers-fonts:                 Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$headers-font-weight:           700;
+
+$intro-text-fonts:              Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+$intro-font-size:               2em;
+$intro-text-font-weight:        700;
+
+$sub-text-font-size:            1.2rem;
+$sub-text-font-weight:          400;
+
+// Imports
+
+@import
+  "actualite",
+  "base",
+  "chantiers",
+  "footer",
+  "header",
+  "home",
+  "navbar"
+;
