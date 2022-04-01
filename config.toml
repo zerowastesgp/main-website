@@ -62,7 +62,7 @@ copyright = "Zero Waste Sud Grand Paris"
 nav = [
   { url = "/chantiers", name = "Chantiers en cours" },
   { url = "/actualite", name = "Actualité" },
-  { url = "https://www.helloasso.com/associations/zero-waste-sud-grand-paris/adhesions/zero-waste-sgp-cotisations-2020", name = "Nous rejoindre" },
+  { url = "https://www.helloasso.com/associations/zero-waste-sud-grand-paris/adhesions/adhesion-zwsgp", name = "Nous rejoindre" },
   { url = "https://www.helloasso.com/associations/zero-waste-sud-grand-paris/formulaires/1", name = "Nous soutenir" },
 ]
 
